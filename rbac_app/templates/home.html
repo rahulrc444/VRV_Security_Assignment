@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h2>Welcome to the RBAC System</h2>
+<p>This is a simple demonstration of Role-Based Access Control using Django.</p>
+{% if user.is_authenticated %}
+    <p>Hello, {{ user.username }}! You are logged in as a {{ user.role }}.</p>
+{% else %}
+    <p>Please <a href="/login/">log in</a> or <a href="/register/">register</a>.</p>
+{% endif %}
+{% endblock %}
