@@ -12,8 +12,7 @@ Setup
 1. Clone the Repository
 bash
 Copy code
-git clone <repository-url>
-cd <project-directory>
+git clone https://github.com/rahulrc444/VRV_Security_Assignment.git 
 
 
 2. Create a Virtual Environment
